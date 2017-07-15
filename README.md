@@ -14,5 +14,5 @@ Install dependencies
 
 Run server
 
-`npm start
+`npm start`
 
