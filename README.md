@@ -1,6 +1,6 @@
 # Roguelike dungeon crawler
 
-2D Game build with React. Part of [FCC](https://www.freecodecamp.org/challenges/build-the-game-of-life).
+2D Game built with React. Part of [FCC](https://www.freecodecamp.org/challenges/build-the-game-of-life).
 
 [Demo](https://prohorova.github.io/dungeon-crawler/)
 
