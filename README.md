@@ -6,7 +6,7 @@ Game of life developed with React.js. Part of [FCC](https://www.freecodecamp.org
 
 Bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
 
-#Run
+## Run
 
 Install dependencies
 
