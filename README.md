@@ -1,6 +1,6 @@
-# Game of life
+# Roguelike dungeon crawler
 
-Game of life developed with React.js. Part of [FCC](https://www.freecodecamp.org/challenges/build-the-game-of-life).
+2D Game build with React. Part of [FCC](https://www.freecodecamp.org/challenges/build-the-game-of-life).
 
 [Demo](https://prohorova.github.io/dungeon-crawler/)
 
