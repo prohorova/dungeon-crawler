@@ -10,7 +10,7 @@ class App extends Component {
     componentDidMount() {
         this.props.init();
 
-        document.addEventListener('keydown', _.throttle((e) => {
+        document.addEventListener('keydown', _.throttle(e => {
             switch(e.key) {
                 case 'ArrowUp':
                     this.props.move(moveDirections.UP);
@@ -28,20 +28,21 @@ class App extends Component {
         }, 300));
     }
     render() {
+        const { board, player, dungeonNumber, showShadow, setShadowVisibility } = this.props;
         let game;
-        if (this.props.player) {
+        if (player) {
             game = (
                 <div>
-                    <Panel player={this.props.player} showShadow={this.props.showShadow}
-                           setShadowVisibility={this.props.setShadowVisibility}/>
-                    <Board board={this.props.board} showShadow={this.props.showShadow}
-                           x={this.props.player.x} y={this.props.player.y}/>
+                    <Panel player={player} showShadow={showShadow}
+                           setShadowVisibility={setShadowVisibility}/>
+                    <Board board={board} showShadow={showShadow}
+                           x={player.x} y={player.y}/>
                 </div>
             )
         }
         return (
             <div>
-                <h1>Dungeon {this.props.dungeonNumber}</h1>
+                <h1>Dungeon {dungeonNumber}</h1>
                 {game}
             </div>
         );
@@ -52,7 +53,7 @@ const mapStateToProps = (state) => ({
     board: state.game.board,
     player: state.game.player,
     dungeonNumber: state.game.dungeonNumber,
-    showShadow: state.shadow
+    showShadow: state.shadow,
 });
 
 const mapDispatchToProps = (dispatch) => ({
